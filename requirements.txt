@@ -17,7 +17,6 @@ biogeme-optimization==0.0.10
 bitsandbytes==0.42.0
 branca==0.8.1
 build==1.2.2.post1
-bzip2==1.0.8
 ca-certificates==2025.4.26
 cachetools==5.5.2
 certifi==2025.1.31
