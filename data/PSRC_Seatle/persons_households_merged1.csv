@@ -1,0 +1,776 @@
+household_id,person_id,age,gender,education,hhincome_broad,vehicle_count
+23000828,2300082801,55-64 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23000828,2300082802,55-64 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23013041,2301304101,55-64 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23013041,2301304102,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23013119,2301311901,45-54 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23013119,2301311902,45-54 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23013307,2301330701,65-74 years,Male,Bachelor degree,"$25,000-$49,999",1 vehicle
+23007814,2300781401,35-44 years,Male,High school graduate,"$75,000-$99,999",2 vehicles
+23007814,2300781402,35-44 years,Female,High school graduate,"$75,000-$99,999",2 vehicles
+23007848,2300784801,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23008213,2300821301,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23008213,2300821302,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23008281,2300828101,55-64 years,Female,Some college,"$100,000-$199,999",1 vehicle
+23006400,2300640001,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23003118,2300311801,25-34 years,Female,Some college,"$25,000-$49,999",1 vehicle
+23003815,2300381501,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23003815,2300381502,45-54 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23004329,2300432901,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23004329,2300432902,35-44 years,Non-binary,Bachelor degree,"$200,000 or more",1 vehicle
+23006400,2300640002,65-74 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23001682,2300168201,45-54 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23001682,2300168202,45-54 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23001690,2300169001,65-74 years,Female,Bachelor degree,"$50,000-$74,999",2 vehicles
+23008718,2300871801,25-34 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23008726,2300872601,35-44 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23005595,2300559501,35-44 years,Male,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23010233,2301023301,55-64 years,Male,Associates degree,"Under $25,000",3 vehicles
+23010371,2301037101,75 years or older,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23010421,2301042101,65-74 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23010421,2301042102,65-74 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23012007,2301200701,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23010629,2301062901,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23012007,2301200702,55-64 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23005895,2300589501,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23012571,2301257101,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23012571,2301257102,35-44 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23017142,2301714201,45-54 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23017142,2301714202,55-64 years,Male,High school graduate,"$100,000-$199,999",1 vehicle
+23017257,2301725701,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23017257,2301725702,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23017346,2301734601,35-44 years,Male,Bachelor degree,"$200,000 or more",2 vehicles
+23017346,2301734603,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23017356,2301735601,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23017356,2301735602,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23019455,2301945501,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23019455,2301945502,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23024687,2302468701,35-44 years,Male,Some college,"$200,000 or more",1 vehicle
+23024687,2302468702,35-44 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23023031,2302303101,45-54 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23026929,2302692901,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23020190,2302019001,45-54 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23027355,2302735501,25-34 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23018491,2301849101,45-54 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23018491,2301849103,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23027564,2302756401,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23027564,2302756402,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23023534,2302353401,65-74 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23023571,2302357101,75 years or older,Female,Some college,"$50,000-$74,999",2 vehicles
+23025844,2302584401,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23023627,2302362701,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23027776,2302777601,65-74 years,Prefer not to answer,Bachelor degree,"$50,000-$74,999",1 vehicle
+23025844,2302584402,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23028096,2302809601,25-34 years,Male,Bachelor degree,"$75,000-$99,999",2 vehicles
+23015304,2301530401,35-44 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23021997,2302199701,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23028288,2302828801,65-74 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23021997,2302199702,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23015321,2301532101,55-64 years,Female,Bachelor degree,"$100,000-$199,999",3 vehicles
+23028288,2302828802,65-74 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23021997,2302199703,75 years or older,Female,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23015321,2301532102,55-64 years,Female,Bachelor degree,"$100,000-$199,999",3 vehicles
+23028315,2302831501,65-74 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23030147,2303014701,55-64 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23030147,2303014702,65-74 years,Male,Associates degree,"$100,000-$199,999",2 vehicles
+23026247,2302624701,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23030178,2303017801,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23026247,2302624702,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23030178,2303017802,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23024392,2302439201,65-74 years,Male,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23024431,2302443101,75 years or older,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23024431,2302443102,75 years or older,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23030930,2303093001,75 years or older,Male,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23030930,2303093002,55-64 years,Female,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23016190,2301619001,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23016261,2301626101,35-44 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23042140,2304214001,18-24 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23043276,2304327601,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23042288,2304228801,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23031052,2303105201,75 years or older,Male,Bachelor degree,"$50,000-$74,999",1 vehicle
+23036894,2303689401,35-44 years,Female,Some college,"$100,000-$199,999",1 vehicle
+23033135,2303313501,55-64 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23042790,2304279001,35-44 years,Male,Some college,"$200,000 or more",1 vehicle
+23042790,2304279002,35-44 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23042804,2304280401,75 years or older,Female,Bachelor degree,"Under $25,000",0 (no vehicles)
+23043084,2304308401,55-64 years,Female,Some college,"Under $25,000",1 vehicle
+23043225,2304322501,25-34 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",2 vehicles
+23043276,2304327602,45-54 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23033135,2303313502,55-64 years,Male,Bachelor degree,"$200,000 or more",2 vehicles
+23031052,2303105202,75 years or older,Female,Some college,"$50,000-$74,999",1 vehicle
+23036894,2303689402,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23036633,2303663301,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23036874,2303687401,45-54 years,Female,Bachelor degree,"$100,000-$199,999",3 vehicles
+23036874,2303687402,45-54 years,Male,Associates degree,"$100,000-$199,999",3 vehicles
+23031117,2303111701,65-74 years,Male,Bachelor degree,"$75,000-$99,999",3 vehicles
+23031117,2303111702,55-64 years,Female,Some college,"$75,000-$99,999",3 vehicles
+23033218,2303321801,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23033218,2303321802,35-44 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23039101,2303910101,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23038450,2303845001,45-54 years,Male,High school graduate,"$200,000 or more",2 vehicles
+23038450,2303845002,45-54 years,Male,Some college,"$200,000 or more",2 vehicles
+23039101,2303910102,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23043755,2304375501,55-64 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23031966,2303196601,55-64 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23031966,2303196602,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23032100,2303210001,18-24 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23044001,2304400101,65-74 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23044172,2304417201,18-24 years,Female,Some college,"$50,000-$74,999",1 vehicle
+23044172,2304417202,18-24 years,Male,High school graduate,"$50,000-$74,999",1 vehicle
+23040089,2304008901,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23040089,2304008902,55-64 years,Male,Bachelor degree,"$100,000-$199,999",3 vehicles
+23041944,2304194401,25-34 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23041944,2304194402,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23041960,2304196001,25-34 years,Female,Associates degree,"$50,000-$74,999",0 (no vehicles)
+23034334,2303433401,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23034334,2303433402,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23034481,2303448101,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23034723,2303472301,18-24 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23047378,2304737801,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23047378,2304737802,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23048383,2304838301,35-44 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23048976,2304897601,55-64 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23049135,2304913501,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23049135,2304913502,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23044545,2304454501,65-74 years,Male,Bachelor degree,"$50,000-$74,999",1 vehicle
+23050483,2305048301,55-64 years,Female,Associates degree,"$25,000-$49,999",1 vehicle
+23052371,2305237101,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23052371,2305237102,45-54 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23054129,2305412901,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23058813,2305881301,35-44 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23058813,2305881302,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23045531,2304553101,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23045531,2304553102,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23052931,2305293101,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23059118,2305911801,18-24 years,Male,Associates degree,"$25,000-$49,999",1 vehicle
+23054467,2305446701,35-44 years,Male,Vocational/technical training,"$100,000-$199,999",2 vehicles
+23054467,2305446702,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23045901,2304590101,25-34 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23059239,2305923901,25-34 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23045901,2304590102,45-54 years,Female,Associates degree,"$50,000-$74,999",0 (no vehicles)
+23053067,2305306701,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23054633,2305463301,45-54 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23051670,2305167001,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23054633,2305463302,45-54 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23051670,2305167002,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23053067,2305306703,45-54 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23054633,2305463303,75 years or older,Female,High school graduate,"$200,000 or more",1 vehicle
+23059620,2305962001,18-24 years,Male,Some college,"$25,000-$49,999",1 vehicle
+23059620,2305962002,18-24 years,Non-binary,Some college,"$25,000-$49,999",1 vehicle
+23053341,2305334101,35-44 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23053445,2305344501,45-54 years,Female,Associates degree,"$50,000-$74,999",1 vehicle
+23056824,2305682401,25-34 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23056824,2305682402,25-34 years,Male,Some college,"$50,000-$74,999",0 (no vehicles)
+23057289,2305728901,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23057777,2305777701,45-54 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23057777,2305777702,35-44 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23076280,2307628001,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23060429,2306042901,35-44 years,Female,Bachelor degree,"$200,000 or more",3 vehicles
+23060429,2306042902,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23060823,2306082301,25-34 years,Prefer not to answer,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23060941,2306094101,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23060941,2306094102,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23061063,2306106301,18-24 years,Male,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23076280,2307628002,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23068005,2306800501,65-74 years,Male,Some college,"Under $25,000",0 (no vehicles)
+23068152,2306815201,55-64 years,Prefer not to answer,Graduate/post-graduate degree,"$75,000-$99,999",0 (no vehicles)
+23062726,2306272601,35-44 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23070319,2307031901,25-34 years,Prefer not to answer,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23063329,2306332901,55-64 years,Female,Bachelor degree,"Under $25,000",0 (no vehicles)
+23063662,2306366201,35-44 years,Male,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23064164,2306416401,25-34 years,Female,Bachelor degree,"Under $25,000",1 vehicle
+23068165,2306816501,65-74 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23072538,2307253801,35-44 years,Female,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23067071,2306707101,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23067082,2306708201,25-34 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23072538,2307253802,45-54 years,Male,Some college,"$75,000-$99,999",0 (no vehicles)
+23076874,2307687401,35-44 years,Male,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23072672,2307267201,25-34 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23072827,2307282701,65-74 years,Male,High school graduate,"Under $25,000",0 (no vehicles)
+23073304,2307330401,45-54 years,Female,Bachelor degree,"$100,000-$199,999",3 vehicles
+23073304,2307330402,55-64 years,Male,Bachelor degree,"$100,000-$199,999",3 vehicles
+23073653,2307365301,25-34 years,Male,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23073814,2307381401,45-54 years,Female,Vocational/technical training,"$100,000-$199,999",1 vehicle
+23073814,2307381402,35-44 years,Non-binary,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23068588,2306858801,35-44 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23070385,2307038501,25-34 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23074536,2307453601,18-24 years,Male,Less than high school,"$25,000-$49,999",0 (no vehicles)
+23077549,2307754901,25-34 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23077869,2307786901,45-54 years,Female,Bachelor degree,"$75,000-$99,999",2 vehicles
+23075213,2307521301,25-34 years,Female,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23077921,2307792101,45-54 years,Male,Associates degree,"$50,000-$74,999",2 vehicles
+23069060,2306906001,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23069060,2306906002,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23078283,2307828301,35-44 years,Male,Vocational/technical training,"$100,000-$199,999",2 vehicles
+23078283,2307828302,35-44 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23075813,2307581301,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23075813,2307581302,25-34 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23069862,2306986201,18-24 years,Male,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23069888,2306988801,45-54 years,Female,Some college,"Under $25,000",1 vehicle
+23071945,2307194501,18-24 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23072026,2307202601,25-34 years,Male,High school graduate,"$75,000-$99,999",1 vehicle
+23072026,2307202602,35-44 years,Male,High school graduate,"$75,000-$99,999",1 vehicle
+23079028,2307902801,55-64 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23079162,2307916201,18-24 years,Female,Bachelor degree,"Under $25,000",1 vehicle
+23087048,2308704801,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23079597,2307959701,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23079597,2307959702,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23079943,2307994301,25-34 years,Male,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23080371,2308037101,25-34 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23081346,2308134601,55-64 years,Male,Associates degree,"$50,000-$74,999",0 (no vehicles)
+23087048,2308704802,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23087068,2308706801,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23093591,2309359101,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23093591,2309359102,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23089946,2308994601,35-44 years,Female,Some college,"$50,000-$74,999",0 (no vehicles)
+23093683,2309368301,45-54 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23089946,2308994602,35-44 years,Male,High school graduate,"$50,000-$74,999",0 (no vehicles)
+23089967,2308996701,25-34 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23089967,2308996702,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",0 (no vehicles)
+23082345,2308234501,25-34 years,Female,High school graduate,"Under $25,000",0 (no vehicles)
+23087379,2308737901,65-74 years,Female,Some college,"Under $25,000",1 vehicle
+23093905,2309390501,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23093905,2309390502,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23090697,2309069701,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23082757,2308275701,45-54 years,Male,Associates degree,"$25,000-$49,999",2 vehicles
+23090734,2309073401,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23093926,2309392601,25-34 years,Non-binary,Graduate/post-graduate degree,"$75,000-$99,999",0 (no vehicles)
+23090734,2309073402,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23095078,2309507801,25-34 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23087615,2308761501,45-54 years,Female,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23091986,2309198601,75 years or older,Prefer not to answer,Bachelor degree,"Under $25,000",0 (no vehicles)
+23093926,2309392602,25-34 years,Female,Some college,"$75,000-$99,999",0 (no vehicles)
+23087615,2308761502,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23090779,2309077901,18-24 years,Female,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23092100,2309210001,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",0 (no vehicles)
+23092143,2309214301,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23092143,2309214302,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23087662,2308766201,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23094078,2309407801,25-34 years,Female,Associates degree,"$25,000-$49,999",1 vehicle
+23082922,2308292201,65-74 years,Male,Bachelor degree,"Under $25,000",0 (no vehicles)
+23087662,2308766202,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23094145,2309414501,55-64 years,Male,Bachelor degree,"Under $25,000",0 (no vehicles)
+23090890,2309089001,18-24 years,Male,Bachelor degree,"Under $25,000",1 vehicle
+23083468,2308346801,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23095268,2309526801,35-44 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23087892,2308789201,55-64 years,Female,Vocational/technical training,"$100,000-$199,999",3 vehicles
+23091018,2309101801,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23095268,2309526802,35-44 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23087892,2308789202,55-64 years,Male,High school graduate,"$100,000-$199,999",3 vehicles
+23086158,2308615801,55-64 years,Female,Some college,"$100,000-$199,999",2 vehicles
+23086158,2308615802,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23094495,2309449501,25-34 years,Male,Some college,"$50,000-$74,999",1 vehicle
+23094647,2309464701,35-44 years,Male,Bachelor degree,"$50,000-$74,999",1 vehicle
+23088138,2308813801,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23091281,2309128101,35-44 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23091281,2309128102,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23088732,2308873201,35-44 years,Non-binary,Some college,"$50,000-$74,999",1 vehicle
+23092634,2309263401,25-34 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23094736,2309473601,18-24 years,Male,Some college,"$25,000-$49,999",0 (no vehicles)
+23092634,2309263402,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23095920,2309592001,25-34 years,Female,Some college,"$25,000-$49,999",1 vehicle
+23091418,2309141801,18-24 years,Female,High school graduate,"$25,000-$49,999",1 vehicle
+23092721,2309272101,25-34 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23093108,2309310801,45-54 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23093108,2309310802,45-54 years,Male,Bachelor degree,"$200,000 or more",2 vehicles
+23093406,2309340601,35-44 years,Non-binary,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23106553,2310655301,65-74 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23107138,2310713801,25-34 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23107142,2310714201,55-64 years,Female,Some college,"Under $25,000",1 vehicle
+23107439,2310743901,18-24 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23107439,2310743902,25-34 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23108458,2310845801,18-24 years,Male,Some college,"Under $25,000",0 (no vehicles)
+23108718,2310871801,35-44 years,Male,Some college,"$25,000-$49,999",0 (no vehicles)
+23109187,2310918701,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23099666,2309966601,25-34 years,Prefer not to answer,Bachelor degree,"$75,000-$99,999",1 vehicle
+23099666,2309966602,25-34 years,Prefer not to answer,Bachelor degree,"$75,000-$99,999",1 vehicle
+23109187,2310918702,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23101273,2310127301,35-44 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23110865,2311086501,75 years or older,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23101340,2310134001,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23104029,2310402901,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23101340,2310134002,35-44 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23109270,2310927001,25-34 years,Male,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23104063,2310406301,35-44 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23104320,2310432001,75 years or older,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23104320,2310432002,75 years or older,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23104756,2310475601,18-24 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23104944,2310494401,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23105059,2310505901,65-74 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23105217,2310521701,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23096577,2309657701,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23099817,2309981701,65-74 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23101651,2310165101,55-64 years,Female,Graduate/post-graduate degree,"Under $25,000",1 vehicle
+23096635,2309663501,35-44 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23098007,2309800701,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23109643,2310964301,55-64 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23111406,2311140601,55-64 years,Female,Graduate/post-graduate degree,"Under $25,000",0 (no vehicles)
+23109643,2310964302,55-64 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23111413,2311141301,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23111413,2311141302,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23109803,2310980301,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23111732,2311173201,65-74 years,Female,Associates degree,"$75,000-$99,999",2 vehicles
+23111732,2311173202,45-54 years,Male,Some college,"$75,000-$99,999",2 vehicles
+23098551,2309855101,18-24 years,Female,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23099899,2309989901,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23099899,2309989902,35-44 years,Male,Associates degree,"$200,000 or more",1 vehicle
+23102415,2310241501,65-74 years,Non-binary,Bachelor degree,"Under $25,000",0 (no vehicles)
+23110100,2311010001,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23100233,2310023301,25-34 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23102738,2310273801,25-34 years,Female,Some college,"$25,000-$49,999",1 vehicle
+23110180,2311018001,18-24 years,Male,High school graduate,"$75,000-$99,999",1 vehicle
+23098819,2309881901,25-34 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23110232,2311023201,45-54 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23100406,2310040601,18-24 years,Male,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23100477,2310047701,45-54 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23112731,2311273101,18-24 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23112736,2311273601,25-34 years,Non-binary,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23099380,2309938001,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23103802,2310380201,18-24 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23097457,2309745701,35-44 years,Male,Bachelor degree,"$200,000 or more",2 vehicles
+23097457,2309745702,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23131110,2313111001,35-44 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23113168,2311316801,25-34 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23113309,2311330901,35-44 years,Female,Vocational/technical training,"Under $25,000",1 vehicle
+23131347,2313134701,65-74 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23131649,2313164901,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23131649,2313164902,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23132327,2313232701,75 years or older,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23132795,2313279501,35-44 years,Male,High school graduate,"$200,000 or more",2 vehicles
+23132795,2313279502,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23132814,2313281401,55-64 years,Female,Associates degree,"$100,000-$199,999",1 vehicle
+23132814,2313281402,55-64 years,Male,Associates degree,"$100,000-$199,999",1 vehicle
+23132814,2313281403,25-34 years,Male,High school graduate,"$100,000-$199,999",1 vehicle
+23133248,2313324801,35-44 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23133248,2313324802,35-44 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23130565,2313056501,35-44 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23124384,2312438401,55-64 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23130744,2313074401,45-54 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23113769,2311376901,75 years or older,Female,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23130744,2313074402,35-44 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23113955,2311395501,35-44 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23114369,2311436901,25-34 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23146865,2314686501,35-44 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23147365,2314736501,65-74 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23136512,2313651202,25-34 years,Non-binary,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23139770,2313977001,75 years or older,Female,Graduate/post-graduate degree,"Under $25,000",1 vehicle
+23149979,2314997901,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23149979,2314997902,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23148390,2314839001,65-74 years,Male,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23136722,2313672201,55-64 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23136722,2313672202,65-74 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23139969,2313996901,35-44 years,Non-binary,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23136761,2313676101,75 years or older,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23136761,2313676102,65-74 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23140081,2314008101,35-44 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23148647,2314864701,18-24 years,Female,High school graduate,"$100,000-$199,999",1 vehicle
+23148647,2314864702,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23140081,2314008102,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23137347,2313734701,25-34 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23137450,2313745001,75 years or older,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23148647,2314864703,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23137450,2313745002,65-74 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23135240,2313524001,45-54 years,Female,Bachelor degree,"$75,000-$99,999",2 vehicles
+23135240,2313524002,45-54 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23135375,2313537501,65-74 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23140178,2314017801,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23135389,2313538901,35-44 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23140178,2314017802,45-54 years,Female,Bachelor degree,"$100,000-$199,999",3 vehicles
+23140178,2314017803,18-24 years,Male,High school graduate,"$100,000-$199,999",3 vehicles
+23140178,2314017804,18-24 years,Female,Less than high school,"$100,000-$199,999",3 vehicles
+23150541,2315054101,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23150541,2315054102,65-74 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23150818,2315081801,18-24 years,Male,Graduate/post-graduate degree,"Under $25,000",3 vehicles
+23142683,2314268301,65-74 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23142683,2314268302,55-64 years,Male,Less than high school,"$200,000 or more",1 vehicle
+23135578,2313557801,55-64 years,Female,Some college,"$50,000-$74,999",0 (no vehicles)
+23135823,2313582301,75 years or older,Female,Bachelor degree,"Under $25,000",1 vehicle
+23150885,2315088501,25-34 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23135910,2313591001,55-64 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",2 vehicles
+23142791,2314279101,55-64 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23142791,2314279102,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23136208,2313620801,35-44 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",0 (no vehicles)
+23141630,2314163001,25-34 years,Female,Associates degree,"$75,000-$99,999",2 vehicles
+23136512,2313651201,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23141630,2314163002,35-44 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23138542,2313854201,55-64 years,Male,Some college,"$100,000-$199,999",4 vehicles
+23145052,2314505201,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23138660,2313866001,75 years or older,Male,Bachelor degree,"$50,000-$74,999",2 vehicles
+23145052,2314505202,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23138660,2313866002,65-74 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",2 vehicles
+23138757,2313875701,55-64 years,Male,Bachelor degree,"$75,000-$99,999",2 vehicles
+23151238,2315123801,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23141879,2314187901,25-34 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23151238,2315123802,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23144047,2314404701,55-64 years,Male,Bachelor degree,"$50,000-$74,999",4 vehicles
+23144047,2314404702,55-64 years,Female,Associates degree,"$50,000-$74,999",4 vehicles
+23146097,2314609701,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23146097,2314609702,25-34 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23156970,2315697002,45-54 years,Male,Associates degree,"$100,000-$199,999",2 vehicles
+23164793,2316479301,25-34 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23165095,2316509501,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23165144,2316514401,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23165144,2316514402,55-64 years,Female,Some college,"$100,000-$199,999",2 vehicles
+23165156,2316515601,35-44 years,Male,Some college,"$100,000-$199,999",3 vehicles
+23165156,2316515602,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23165521,2316552101,75 years or older,Female,Graduate/post-graduate degree,"$50,000-$74,999",2 vehicles
+23156970,2315697003,18-24 years,Male,Some college,"$100,000-$199,999",2 vehicles
+23151352,2315135201,75 years or older,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23157025,2315702501,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23151614,2315161401,18-24 years,Female,Some college,"Under $25,000",1 vehicle
+23153489,2315348901,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23151628,2315162801,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23153489,2315348902,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23161766,2316176601,55-64 years,Male,Bachelor degree,"$100,000-$199,999",3 vehicles
+23155439,2315543901,55-64 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23155439,2315543902,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23161766,2316176602,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23153568,2315356801,25-34 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23153568,2315356802,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23155506,2315550601,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23155506,2315550602,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23157696,2315769601,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23157696,2315769602,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23159999,2315999901,45-54 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23159999,2315999902,25-34 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23160251,2316025101,18-24 years,Female,Bachelor degree,"$50,000-$74,999",2 vehicles
+23162062,2316206201,45-54 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23162062,2316206202,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23166824,2316682401,65-74 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23166824,2316682402,65-74 years,Male,Bachelor degree,"$50,000-$74,999",1 vehicle
+23156082,2315608201,55-64 years,Male,Associates degree,"$50,000-$74,999",0 (no vehicles)
+23158323,2315832301,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23158323,2315832302,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23153991,2315399101,65-74 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23158417,2315841701,45-54 years,Male,Some college,"$25,000-$49,999",0 (no vehicles)
+23167034,2316703401,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23153991,2315399102,65-74 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23154178,2315417801,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23154178,2315417802,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23154343,2315434301,35-44 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23154343,2315434302,35-44 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23167215,2316721501,45-54 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23158862,2315886201,35-44 years,Male,Some college,"Under $25,000",0 (no vehicles)
+23167215,2316721502,45-54 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23160732,2316073201,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23156716,2315671601,35-44 years,Male,High school graduate,"$25,000-$49,999",2 vehicles
+23156721,2315672101,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23160732,2316073202,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23156721,2315672102,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23159120,2315912001,25-34 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23152615,2315261501,75 years or older,Male,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23154716,2315471601,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23160843,2316084301,45-54 years,Male,Bachelor degree,"$50,000-$74,999",1 vehicle
+23156970,2315697001,45-54 years,Female,Associates degree,"$100,000-$199,999",2 vehicles
+23152615,2315261502,75 years or older,Female,Bachelor degree,"$100,000-$199,999",3 vehicles
+23152615,2315261503,35-44 years,Female,Some college,"$100,000-$199,999",3 vehicles
+23153120,2315312001,65-74 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23153120,2315312002,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23154716,2315471604,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23181943,2318194304,25-34 years,Female,Some college,"$50,000-$74,999",2 vehicles
+23182395,2318239501,25-34 years,Male,Graduate/post-graduate degree,"Under $25,000",0 (no vehicles)
+23182415,2318241501,35-44 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23183549,2318354901,25-34 years,Non-binary,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23184022,2318402201,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23184022,2318402202,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23184486,2318448601,35-44 years,Male,High school graduate,"$25,000-$49,999",0 (no vehicles)
+23184551,2318455101,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23184551,2318455102,18-24 years,Male,High school graduate,"$100,000-$199,999",0 (no vehicles)
+23184568,2318456801,25-34 years,Female,Associates degree,"Under $25,000",0 (no vehicles)
+23184873,2318487301,18-24 years,Female,Some college,"Under $25,000",0 (no vehicles)
+23185065,2318506501,25-34 years,Male,Some college,"Under $25,000",0 (no vehicles)
+23179894,2317989401,55-64 years,Female,High school graduate,"Under $25,000",0 (no vehicles)
+23170689,2317068901,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",3 vehicles
+23170689,2317068902,45-54 years,Male,Some college,"$100,000-$199,999",3 vehicles
+23171692,2317169201,25-34 years,Female,Vocational/technical training,"Under $25,000",1 vehicle
+23171798,2317179801,25-34 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23171798,2317179802,18-24 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23172199,2317219901,25-34 years,Female,Associates degree,"$25,000-$49,999",1 vehicle
+23172199,2317219902,35-44 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23175254,2317525401,55-64 years,Female,Vocational/technical training,"$75,000-$99,999",2 vehicles
+23180127,2318012701,25-34 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23177907,2317790701,25-34 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23180218,2318021801,35-44 years,Female,Bachelor degree,"$25,000-$49,999",3 vehicles
+23187459,2318745901,35-44 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23187459,2318745902,45-54 years,Male,Some college,"$25,000-$49,999",1 vehicle
+23181306,2318130601,25-34 years,Female,Some college,"$25,000-$49,999",1 vehicle
+23181532,2318153201,45-54 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23181532,2318153202,45-54 years,Male,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23181600,2318160001,18-24 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23181798,2318179801,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23181798,2318179802,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23181943,2318194301,25-34 years,Male,Some college,"$50,000-$74,999",2 vehicles
+23187774,2318777401,35-44 years,Prefer not to answer,Some college,"$25,000-$49,999",0 (no vehicles)
+23168123,2316812301,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23168123,2316812302,55-64 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23169889,2316988901,35-44 years,Prefer not to answer,Some college,"$100,000-$199,999",2 vehicles
+23169889,2316988902,35-44 years,Prefer not to answer,Bachelor degree,"$100,000-$199,999",2 vehicles
+23169964,2316996401,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23169964,2316996402,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23169994,2316999401,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",0 (no vehicles)
+23170358,2317035801,25-34 years,Male,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23187986,2318798601,25-34 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23187986,2318798602,25-34 years,Female,Less than high school,"$25,000-$49,999",1 vehicle
+23178268,2317826801,65-74 years,Female,Bachelor degree,"Under $25,000",0 (no vehicles)
+23188864,2318886401,45-54 years,Male,Some college,"$50,000-$74,999",1 vehicle
+23178310,2317831001,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23178310,2317831002,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23175960,2317596001,25-34 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23178610,2317861001,25-34 years,Prefer not to answer,Bachelor degree,"$50,000-$74,999",2 vehicles
+23189001,2318900101,35-44 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23176262,2317626201,25-34 years,Male,High school graduate,"$25,000-$49,999",0 (no vehicles)
+23178640,2317864001,25-34 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23189237,2318923701,65-74 years,Male,High school graduate,"$25,000-$49,999",1 vehicle
+23178723,2317872301,25-34 years,Female,High school graduate,"Under $25,000",1 vehicle
+23189706,2318970601,18-24 years,Male,Some college,"$25,000-$49,999",0 (no vehicles)
+23189716,2318971601,25-34 years,Female,High school graduate,"$50,000-$74,999",1 vehicle
+23189716,2318971602,25-34 years,Male,High school graduate,"$50,000-$74,999",1 vehicle
+23177095,2317709501,18-24 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23189766,2318976601,65-74 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23177255,2317725501,35-44 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23190034,2319003401,55-64 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23190034,2319003402,55-64 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23173759,2317375901,35-44 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23173828,2317382801,65-74 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23173828,2317382802,65-74 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23173828,2317382803,75 years or older,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23174893,2317489301,25-34 years,Female,High school graduate,"Under $25,000",0 (no vehicles)
+23190167,2319016701,55-64 years,Female,Bachelor degree,"$200,000 or more",3 vehicles
+23190167,2319016702,55-64 years,Male,Associates degree,"$200,000 or more",3 vehicles
+23190167,2319016703,18-24 years,Female,Bachelor degree,"$200,000 or more",3 vehicles
+23190167,2319016704,18-24 years,Male,Bachelor degree,"$200,000 or more",3 vehicles
+23190423,2319042301,25-34 years,Female,Some college,"$100,000-$199,999",2 vehicles
+23190423,2319042302,25-34 years,Male,Some college,"$100,000-$199,999",2 vehicles
+23190613,2319061301,35-44 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23199929,2319992901,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23191574,2319157401,55-64 years,Female,Some college,"$50,000-$74,999",1 vehicle
+23191636,2319163601,55-64 years,Male,Less than high school,"Under $25,000",0 (no vehicles)
+23192808,2319280801,18-24 years,Female,Some college,"Under $25,000",0 (no vehicles)
+23192982,2319298201,55-64 years,Male,High school graduate,"$25,000-$49,999",0 (no vehicles)
+23193322,2319332201,25-34 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",0 (no vehicles)
+23194164,2319416401,25-34 years,Non-binary,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23194460,2319446001,55-64 years,Male,Some college,"Under $25,000",0 (no vehicles)
+23194475,2319447501,65-74 years,Male,Bachelor degree,"$25,000-$49,999",1 vehicle
+23194613,2319461301,75 years or older,Female,Graduate/post-graduate degree,"$25,000-$49,999",1 vehicle
+23199929,2319992902,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23200239,2320023901,45-54 years,Female,Vocational/technical training,"$25,000-$49,999",1 vehicle
+23200239,2320023902,18-24 years,Male,Less than high school,"$25,000-$49,999",1 vehicle
+23200239,2320023903,18-24 years,Male,High school graduate,"$25,000-$49,999",1 vehicle
+23200553,2320055301,65-74 years,Female,Associates degree,"Under $25,000",0 (no vehicles)
+23200559,2320055901,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23200559,2320055902,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23200810,2320081001,25-34 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23200910,2320091001,35-44 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23201036,2320103601,65-74 years,Male,Graduate/post-graduate degree,"Under $25,000",0 (no vehicles)
+23201516,2320151601,25-34 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23202696,2320269601,25-34 years,Female,Bachelor degree,"$50,000-$74,999",2 vehicles
+23202696,2320269602,25-34 years,Male,Bachelor degree,"$50,000-$74,999",2 vehicles
+23202907,2320290701,55-64 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23203380,2320338001,55-64 years,Female,Bachelor degree,"Under $25,000",1 vehicle
+23204209,2320420901,35-44 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23207304,2320730401,45-54 years,Female,Associates degree,"$50,000-$74,999",1 vehicle
+23207309,2320730901,25-34 years,Prefer not to answer,Bachelor degree,"$50,000-$74,999",1 vehicle
+23207375,2320737501,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23207457,2320745701,35-44 years,Prefer not to answer,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23208062,2320806201,25-34 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23208271,2320827101,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23208271,2320827102,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23208284,2320828401,65-74 years,Female,Bachelor degree,"$75,000-$99,999",1 vehicle
+23197948,2319794801,18-24 years,Female,Bachelor degree,"Under $25,000",0 (no vehicles)
+23209905,2320990501,55-64 years,Male,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23210030,2321003001,65-74 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23210030,2321003002,65-74 years,Female,High school graduate,"$75,000-$99,999",2 vehicles
+23198115,2319811501,55-64 years,Female,Some college,"$50,000-$74,999",3 vehicles
+23210449,2321044901,55-64 years,Prefer not to answer,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23198115,2319811502,25-34 years,Female,Bachelor degree,"$50,000-$74,999",3 vehicles
+23210752,2321075201,35-44 years,Prefer not to answer,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23211176,2321117601,55-64 years,Prefer not to answer,Bachelor degree,"$75,000-$99,999",1 vehicle
+23211721,2321172101,25-34 years,Male,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23211951,2321195101,25-34 years,Male,Bachelor degree,"$200,000 or more",2 vehicles
+23211951,2321195102,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23198115,2319811503,65-74 years,Female,Less than high school,"$50,000-$74,999",3 vehicles
+23212524,2321252401,18-24 years,Prefer not to answer,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23198115,2319811504,45-54 years,Female,High school graduate,"$50,000-$74,999",3 vehicles
+23198126,2319812601,55-64 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23212610,2321261001,25-34 years,Female,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23212610,2321261002,25-34 years,Female,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23212976,2321297601,55-64 years,Female,Graduate/post-graduate degree,"$25,000-$49,999",0 (no vehicles)
+23212976,2321297602,25-34 years,Male,High school graduate,"$25,000-$49,999",0 (no vehicles)
+23213678,2321367801,25-34 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23213814,2321381401,25-34 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23213937,2321393701,25-34 years,Non-binary,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23214001,2321400101,25-34 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23214001,2321400102,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23214765,2321476501,18-24 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23215215,2321521501,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23215215,2321521502,35-44 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23215575,2321557501,55-64 years,Female,Associates degree,"$50,000-$74,999",1 vehicle
+23215872,2321587201,18-24 years,Female,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23215872,2321587202,18-24 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23215952,2321595201,25-34 years,Female,High school graduate,"$25,000-$49,999",0 (no vehicles)
+23198126,2319812602,65-74 years,Male,Some college,"$200,000 or more",2 vehicles
+23198315,2319831501,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23198588,2319858801,25-34 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23198677,2319867701,25-34 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",0 (no vehicles)
+23198749,2319874901,25-34 years,Male,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23198906,2319890601,45-54 years,Female,Vocational/technical training,"$25,000-$49,999",0 (no vehicles)
+23199287,2319928701,75 years or older,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23199622,2319962201,65-74 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23199877,2319987701,35-44 years,Female,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23195177,2319517701,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23195397,2319539701,55-64 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23195594,2319559401,25-34 years,Non-binary,Associates degree,"$25,000-$49,999",1 vehicle
+23195594,2319559402,35-44 years,Male,Vocational/technical training,"$25,000-$49,999",1 vehicle
+23195954,2319595401,35-44 years,Female,High school graduate,"Under $25,000",0 (no vehicles)
+23195957,2319595701,55-64 years,Male,Bachelor degree,"$25,000-$49,999",1 vehicle
+23196127,2319612701,45-54 years,Male,Some college,"$50,000-$74,999",0 (no vehicles)
+23196606,2319660601,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23196629,2319662901,45-54 years,Male,Less than high school,"Under $25,000",0 (no vehicles)
+23196692,2319669201,45-54 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23196692,2319669202,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23196987,2319698701,55-64 years,Female,Some college,"Under $25,000",0 (no vehicles)
+23197052,2319705201,25-34 years,Male,Bachelor degree,"Under $25,000",2 vehicles
+23197272,2319727201,25-34 years,Male,Bachelor degree,"$75,000-$99,999",1 vehicle
+23197596,2319759601,45-54 years,Female,Vocational/technical training,"$25,000-$49,999",1 vehicle
+23197751,2319775101,35-44 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23197751,2319775102,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23204525,2320452501,25-34 years,Prefer not to answer,Some college,"$100,000-$199,999",0 (no vehicles)
+23204525,2320452502,25-34 years,Prefer not to answer,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23204829,2320482901,45-54 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23204978,2320497801,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23205450,2320545001,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23205450,2320545002,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23205468,2320546801,25-34 years,Female,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23205468,2320546802,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23205518,2320551801,35-44 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23205899,2320589901,45-54 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23205899,2320589902,35-44 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23206187,2320618701,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23206187,2320618702,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23216822,2321682201,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23216854,2321685401,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23220745,2322074501,35-44 years,Female,Associates degree,"$75,000-$99,999",1 vehicle
+23222034,2322203401,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23222116,2322211601,35-44 years,Male,Some college,"Under $25,000",0 (no vehicles)
+23222358,2322235801,25-34 years,Male,Bachelor degree,"$75,000-$99,999",0 (no vehicles)
+23222696,2322269601,55-64 years,Prefer not to answer,Less than high school,"Under $25,000",0 (no vehicles)
+23222808,2322280801,45-54 years,Male,Bachelor degree,"$25,000-$49,999",1 vehicle
+23223047,2322304701,45-54 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23217482,2321748201,55-64 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23217496,2321749601,55-64 years,Female,Some college,"$50,000-$74,999",0 (no vehicles)
+23224634,2322463401,65-74 years,Male,Bachelor degree,"$75,000-$99,999",2 vehicles
+23224634,2322463402,55-64 years,Female,Bachelor degree,"$75,000-$99,999",2 vehicles
+23224634,2322463403,18-24 years,Female,Some college,"$75,000-$99,999",2 vehicles
+23218042,2321804201,25-34 years,Non-binary,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23218042,2321804202,25-34 years,Non-binary,Bachelor degree,"$200,000 or more",1 vehicle
+23218226,2321822601,65-74 years,Female,Graduate/post-graduate degree,"Under $25,000",0 (no vehicles)
+23218402,2321840201,75 years or older,Male,Bachelor degree,"$75,000-$99,999",2 vehicles
+23218402,2321840202,75 years or older,Female,Bachelor degree,"$75,000-$99,999",2 vehicles
+23219190,2321919001,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23219245,2321924501,25-34 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23219822,2321982201,25-34 years,Male,Bachelor degree,"$200,000 or more",0 (no vehicles)
+23235969,2323596901,35-44 years,Female,Associates degree,"$100,000-$199,999",3 vehicles
+23235969,2323596902,25-34 years,Male,Vocational/technical training,"$100,000-$199,999",3 vehicles
+23237511,2323751101,65-74 years,Female,Some college,"$25,000-$49,999",3 vehicles
+23225509,2322550901,35-44 years,Female,Some college,"$100,000-$199,999",2 vehicles
+23225509,2322550902,35-44 years,Male,Vocational/technical training,"$100,000-$199,999",2 vehicles
+23228978,2322897801,45-54 years,Prefer not to answer,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23237511,2323751102,75 years or older,Female,Bachelor degree,"$25,000-$49,999",3 vehicles
+23247796,2324779601,55-64 years,Female,Vocational/technical training,"$100,000-$199,999",2 vehicles
+23247796,2324779602,55-64 years,Non-binary,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23247796,2324779603,25-34 years,Non-binary,Bachelor degree,"$100,000-$199,999",2 vehicles
+23239379,2323937901,55-64 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",2 vehicles
+23251318,2325131801,25-34 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23251318,2325131802,25-34 years,Male,Bachelor degree,"$200,000 or more",1 vehicle
+23251831,2325183101,45-54 years,Female,Vocational/technical training,"$50,000-$74,999",5 vehicles
+23251831,2325183102,45-54 years,Male,Some college,"$50,000-$74,999",5 vehicles
+23251831,2325183104,18-24 years,Male,High school graduate,"$50,000-$74,999",5 vehicles
+23251831,2325183105,25-34 years,Female,Some college,"$50,000-$74,999",5 vehicles
+23243384,2324338401,55-64 years,Male,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23243384,2324338402,65-74 years,Female,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23275022,2327502201,25-34 years,Prefer not to answer,Bachelor degree,"$200,000 or more",1 vehicle
+23275022,2327502202,35-44 years,Prefer not to answer,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23276330,2327633001,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23276330,2327633002,35-44 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23262376,2326237601,65-74 years,Female,Some college,"$25,000-$49,999",1 vehicle
+23263634,2326363401,25-34 years,Male,Bachelor degree,"$100,000-$199,999",2 vehicles
+23263634,2326363402,35-44 years,Female,Bachelor degree,"$100,000-$199,999",2 vehicles
+23278030,2327803001,45-54 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23278030,2327803002,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",2 vehicles
+23279180,2327918001,45-54 years,Male,Some college,"$100,000-$199,999",1 vehicle
+23279180,2327918002,45-54 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23272383,2327238301,25-34 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23272383,2327238302,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23287962,2328796201,25-34 years,Female,Bachelor degree,"$50,000-$74,999",1 vehicle
+23303161,2330316101,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23303881,2330388101,35-44 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23303881,2330388102,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",1 vehicle
+23304559,2330455901,75 years or older,Male,Bachelor degree,"$50,000-$74,999",4 vehicles
+23305150,2330515001,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",3 vehicles
+23305150,2330515002,35-44 years,Female,Vocational/technical training,"$200,000 or more",3 vehicles
+23305450,2330545001,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23305450,2330545002,35-44 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23316125,2331612501,45-54 years,Female,Associates degree,"$75,000-$99,999",2 vehicles
+23290621,2329062101,35-44 years,Female,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23293899,2329389901,45-54 years,Female,Bachelor degree,"$25,000-$49,999",1 vehicle
+23311609,2331160901,25-34 years,Prefer not to answer,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23311609,2331160902,25-34 years,Prefer not to answer,Graduate/post-graduate degree,"$75,000-$99,999",2 vehicles
+23316125,2331612502,55-64 years,Male,Bachelor degree,"$75,000-$99,999",2 vehicles
+23334537,2333453701,45-54 years,Male,High school graduate,"Under $25,000",0 (no vehicles)
+23334671,2333467101,65-74 years,Male,Bachelor degree,"$25,000-$49,999",2 vehicles
+23336125,2333612501,65-74 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23329630,2332963001,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23329630,2332963002,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23329867,2332986701,45-54 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23329867,2332986702,45-54 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23319664,2331966401,45-54 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23327190,2332719001,25-34 years,Female,Graduate/post-graduate degree,"Under $25,000",2 vehicles
+23330382,2333038201,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23327190,2332719002,25-34 years,Female,Graduate/post-graduate degree,"Under $25,000",2 vehicles
+23330382,2333038202,35-44 years,Male,High school graduate,"$100,000-$199,999",1 vehicle
+23327463,2332746301,25-34 years,Male,Associates degree,"$200,000 or more",3 vehicles
+23327463,2332746302,55-64 years,Male,Vocational/technical training,"$200,000 or more",3 vehicles
+23341557,2334155701,25-34 years,Male,Graduate/post-graduate degree,"$200,000 or more",0 (no vehicles)
+23320424,2332042401,45-54 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23320424,2332042402,55-64 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23346649,2334664901,35-44 years,Prefer not to answer,Some college,"$25,000-$49,999",0 (no vehicles)
+23328772,2332877201,35-44 years,Male,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23318209,2331820901,45-54 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",1 vehicle
+23328772,2332877202,35-44 years,Female,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23318209,2331820902,35-44 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23321230,2332123001,65-74 years,Female,Bachelor degree,"$200,000 or more",4 vehicles
+23321230,2332123002,65-74 years,Male,Bachelor degree,"$200,000 or more",4 vehicles
+23343415,2334341501,55-64 years,Prefer not to answer,Graduate/post-graduate degree,"Under $25,000",0 (no vehicles)
+23384997,2338499701,35-44 years,Male,Bachelor degree,"$50,000-$74,999",1 vehicle
+23386838,2338683801,25-34 years,Female,Bachelor degree,"$50,000-$74,999",0 (no vehicles)
+23364255,2336425501,65-74 years,Male,High school graduate,"Under $25,000",0 (no vehicles)
+23365708,2336570801,18-24 years,Female,Some college,"Under $25,000",0 (no vehicles)
+23366240,2336624001,25-34 years,Female,Bachelor degree,"$100,000-$199,999",1 vehicle
+23366240,2336624002,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23366303,2336630301,35-44 years,Female,Bachelor degree,"$200,000 or more",1 vehicle
+23366303,2336630302,35-44 years,Male,Associates degree,"$200,000 or more",1 vehicle
+23380002,2338000201,35-44 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23359819,2335981901,25-34 years,Female,Bachelor degree,"$200,000 or more",2 vehicles
+23359819,2335981902,25-34 years,Male,High school graduate,"$200,000 or more",2 vehicles
+23368988,2336898801,25-34 years,Male,Some college,"$25,000-$49,999",1 vehicle
+23356974,2335697401,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",0 (no vehicles)
+23356974,2335697402,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",0 (no vehicles)
+23357477,2335747701,25-34 years,Male,Bachelor degree,"$25,000-$49,999",1 vehicle
+23382596,2338259601,25-34 years,Male,Graduate/post-graduate degree,"$100,000-$199,999",0 (no vehicles)
+23374986,2337498601,35-44 years,Female,Bachelor degree,"$25,000-$49,999",0 (no vehicles)
+23382596,2338259602,25-34 years,Female,Bachelor degree,"$100,000-$199,999",0 (no vehicles)
+23370787,2337078701,25-34 years,Male,Bachelor degree,"$75,000-$99,999",2 vehicles
+23370787,2337078702,25-34 years,Male,Some college,"$75,000-$99,999",2 vehicles
+23375730,2337573001,35-44 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23353862,2335386201,65-74 years,Female,Associates degree,"$100,000-$199,999",1 vehicle
+23376511,2337651101,35-44 years,Male,Bachelor degree,"Under $25,000",0 (no vehicles)
+23388066,2338806601,35-44 years,Male,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
+23388066,2338806602,35-44 years,Male,Bachelor degree,"$200,000 or more",2 vehicles
+23388253,2338825301,25-34 years,Male,Graduate/post-graduate degree,"$50,000-$74,999",1 vehicle
+23396739,2339673901,45-54 years,Male,Associates degree,"Under $25,000",0 (no vehicles)
+23398257,2339825701,25-34 years,Female,Graduate/post-graduate degree,"$75,000-$99,999",1 vehicle
+23389943,2338994301,35-44 years,Male,Associates degree,"$25,000-$49,999",1 vehicle
+23400707,2340070701,25-34 years,Male,Bachelor degree,"$100,000-$199,999",1 vehicle
+23392002,2339200201,35-44 years,Female,Less than high school,"Under $25,000",0 (no vehicles)
+23400707,2340070702,25-34 years,Male,Associates degree,"$100,000-$199,999",1 vehicle
+23404286,2340428601,35-44 years,Female,Graduate/post-graduate degree,"$200,000 or more",2 vehicles
