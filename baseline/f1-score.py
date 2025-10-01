@@ -2,11 +2,11 @@ import pandas as pd
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Đọc dữ liệu
-df = pd.read_csv("results/result4.csv")
+df = pd.read_csv("results/result5.csv")
 
 # Kiểm tra xem có đủ cột không
 if not {"prediction", "CHOICE"}.issubset(df.columns):
-    raise ValueError("File final.csv phải có 2 cột: 'prediction' và 'CHOICE'.")
+    raise ValueError("File result5.csv phải có 2 cột: 'prediction' và 'CHOICE'.")
 
 # Kiểm tra và xử lý giá trị NaN
 print("Số lượng giá trị NaN trong cột prediction:", df["prediction"].isna().sum())

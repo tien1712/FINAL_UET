@@ -18,9 +18,9 @@ if not api_keys:
     raise RuntimeError("Không tìm thấy API key nào trong biến môi trường GOOGLE_API_KEY_1..11")
 
 label_map = {
-    "Public transports": 1,
-    "Private modes": 2,
-    "Soft modes": 3
+    "Public transports": 0,
+    "Private modes": 1,
+    "Soft modes": 2
 }
 
 # Đọc dữ liệu gốc
