@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Config ---
-CSV_PATH = "data/PSRC_Seatle/train.csv"       # file của bạn
+CSV_PATH = "data/Optima/train.csv"       # file của bạn
 FAISS_FOLDER = "db/faiss_index"
 
 # --- API Keys Management ---

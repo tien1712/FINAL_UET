@@ -18,7 +18,7 @@ prompt_template = ChatPromptTemplate.from_template(template)
 
 def prompt(row):
     # p1: Task description
-    p1 = "You are a transportation behavior expert that predicts trip mode. Based on the provided trip details, their previous trip choices and similar past trips, what is the most likely trip mode? Only output one of: [Drive, Walk, Transit, Bike/Micromobility]. Do not provide any explanation or additional text, just output the mode name."
+    p1 = "You are a transportation behavior expert that predicts trip mode (either 'Public transports (train, bus, tram, etc.)', 'Private modes (car, motorbike, etc.)', 'Soft modes (bike, walk, etc.)'). Based on the provided trip details, their previous trip choices and similar past trips, what is the most likely trip mode? Only output one of: [Public transports, Private modes, Soft modes]. Do not provide any explanation or additional text, just output the mode name."
     
     # p2: Input information
     p2 = "Trip details: \n" + row["INFOR"]
@@ -47,7 +47,7 @@ def prompt(row):
     
 # test prompt
 if __name__ == "__main__":
-    df = pd.read_csv("data/PSRC_Seatle/test.csv")
+    df = pd.read_csv("data/Optima/test.csv")
     row = df.iloc[3]
     prompt_value = prompt(row)
     result = str(prompt_value)  # convert to string

@@ -18,23 +18,22 @@ if not api_keys:
     raise RuntimeError("Không tìm thấy API key nào trong biến môi trường GOOGLE_API_KEY_1..11")
 
 label_map = {
-    "Drive": 1,
-    "Walk": 2,
-    "Transit": 3,
-    "Bike/Micromobility": 4
+    "Public transports": 1,
+    "Private modes": 2,
+    "Soft modes": 3
 }
 
 # Đọc dữ liệu gốc
-df = pd.read_csv("data/PSRC_Seatle/test.csv")
+df = pd.read_csv("data/Optima/test.csv")
 df["id"] = df.index  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result4.csv"
+result_path = "results/result5.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)
     if 'id' not in result_df.columns or 'prediction' not in result_df.columns:
-        raise ValueError("result4.csv không đúng định dạng")
+        raise ValueError("result5.csv không đúng định dạng")
     # Tìm các bản ghi có prediction rỗng
     empty_predictions = result_df[result_df['prediction'].isna() | (result_df['prediction'] == '')]
     print(f"Tìm thấy {len(empty_predictions)} bản ghi có prediction rỗng")
@@ -99,10 +98,10 @@ def safe_parse_json(raw: str):
         # Heuristic cuối: cố gắng trích xuất nhãn dự đoán từ text tự do
         try:
             # Tìm pattern prediction: <label> hoặc chỉ có label đứng riêng lẻ
-            m = re.search(r"prediction\s*[:=\-\s]+(Drive|Walk|Transit|Bike/Micromobility)", text, flags=re.IGNORECASE)
+            m = re.search(r"prediction\s*[:=\-\s]+(Public transports|Private modes|Soft modes)", text, flags=re.IGNORECASE)
             if not m:
                 # Tìm label đứng riêng lẻ (có thể là toàn bộ response)
-                m = re.search(r"\b(Drive|Walk|Transit|Bike/Micromobility)\b", text, flags=re.IGNORECASE)
+                m = re.search(r"\b(Public transports|Private modes|Soft modes)\b", text, flags=re.IGNORECASE)
             if m:
                 label = m.group(1).strip()
                 return {"prediction": label}

@@ -138,17 +138,11 @@ class EmbeddingKeyManager:
 
 
 choice_map = {
-    1: "Drive",
-    2: "Walk",
-    3: "Transit",
-    4: "Bike/Micromobility"
+    0: "Public transports",
+    1: "Private modes",
+    2: "Soft modes",
 }
 
-
-# --- Load dữ liệu ---
-# df = pd.read_csv(CSV_PATH)
-# texts = df['INFOR'].fillna("").astype(str).tolist()
-# metadatas = [{"id": int(row["ID"]), "choice": int(row["CHOICE"])} for _, row in df.iterrows()]
 
 # --- Khởi tạo Embedding Key Manager & model ban đầu ---
 key_manager = EmbeddingKeyManager(API_KEYS, REQUESTS_PER_KEY_PER_DAY, REQUESTS_PER_MINUTE)
@@ -176,12 +170,14 @@ def get_similar_vectors_by_id(query_id: int, query: str, examples_id: int = 2) -
 
     if not collected_docs:
         return []
-
-    # 🔹 Cross-Encoder re-ranking theo query
-    pairs = [(query, d.page_content) for d in collected_docs]
-    scores = cross_encoder.predict(pairs)
-    ranked = sorted(zip(collected_docs, scores), key=lambda x: x[1], reverse=True)
-    top_docs = [doc for doc, _ in ranked[:examples_id]]
+    if len(collected_docs) > examples_id:
+        # 🔹 Cross-Encoder re-ranking theo query
+        pairs = [(query, d.page_content) for d in collected_docs]
+        scores = cross_encoder.predict(pairs)
+        ranked = sorted(zip(collected_docs, scores), key=lambda x: x[1], reverse=True)
+        top_docs = [doc for doc, _ in ranked[:examples_id]]
+    else:
+        top_docs = collected_docs
 
     final_situations = []
     for i, doc in enumerate(top_docs, 1):
@@ -189,10 +185,7 @@ def get_similar_vectors_by_id(query_id: int, query: str, examples_id: int = 2) -
         choice = doc.metadata.get("choice", 0)
         choice_desc = choice_map.get(choice, "unknown")
         # Tìm và chỉ lấy phần thông tin về chuyến đi, loại bỏ thông tin cá nhân
-        match = re.search(r"(The trip distance is [\d.]+ miles, and trip purpose is \w+\. Trip starts at \d+:\d+:\d+)", content)
-        if not match:
-            # Fallback: tìm pattern khác có thể có
-            match = re.search(r"(The trip distance is [\d.]+ miles.*?trip purpose is \w+.*?starts at \d+:\d+:\d+)", content, re.IGNORECASE)
+        match = re.search(r"(.*?free of charge)", content, re.DOTALL)
         result = match.group(1) if match else "No trip information found"
         example = (
             f"Situation {i}: {result}. That person chose {choice_desc}.\n"
@@ -200,7 +193,7 @@ def get_similar_vectors_by_id(query_id: int, query: str, examples_id: int = 2) -
         final_situations.append(example)
     return final_situations
 
-def balanced_retrieval_with_rerank(query: str, query_id: int, k_per_label: int = 5, top_k: int = 4):
+def balanced_retrieval_with_rerank(query: str, query_id: int, k_per_label: int = 5, top_k: int = 3):
     """
     Balanced Retrieval theo label + Cross-Encoder re-ranking.
     Trả về: 1 chuỗi text gồm các ví dụ.
@@ -243,9 +236,9 @@ def retrieval(query: str, id: int):
 
 #test
 if __name__ == "__main__":
-    pd = pd.read_csv("data/PSRC_Seatle/test.csv")
-    query = pd.iloc[1]["INFOR"]
-    id = pd.iloc[1]["ID"]
+    pd = pd.read_csv("data/Optima/test.csv")
+    query = pd.iloc[3]["INFOR"]
+    id = pd.iloc[3]["ID"]
     situations, examples = retrieval(query, id)
     print(query)
     print(id)
