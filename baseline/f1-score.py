@@ -13,8 +13,6 @@ print("Số lượng giá trị NaN trong cột prediction:", df["prediction"].i
 print("Số lượng giá trị NaN trong cột CHOICE:", df["CHOICE"].isna().sum())
 print(df[df["prediction"].isna()])
 
-# Loại bỏ các hàng có giá trị NaN
-df = df.dropna(subset=["prediction", "CHOICE"])
 
 # Lấy nhãn dự đoán và nhãn thực
 y_pred = df["prediction"]
