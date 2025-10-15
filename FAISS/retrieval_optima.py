@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Cấu hình ---
-faiss_folder = "db/faiss_index"  # FAISS database từ main.py
+faiss_folder = "db/faiss_index_cleanoptima(70:30)"  # FAISS database từ main.py
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
 # --- Multiple API Keys & Key Rotation (1000 embeds/day per key) ---
@@ -188,7 +188,7 @@ def get_similar_vectors_by_id(query_id: int, query: str, examples_id: int = 2) -
         match = re.search(r"(.*?free of charge)", content, re.DOTALL)
         result = match.group(1) if match else "No trip information found"
         example = (
-            f"Situation {i}: {result}. That person chose {choice_desc}.\n"
+            f"Situation {i}: {result}. That person chose {choice_desc}. "
         )
         final_situations.append(example)
     return final_situations
@@ -223,11 +223,12 @@ def balanced_retrieval_with_rerank(query: str, query_id: int, k_per_label: int =
         choice = doc.metadata.get("choice", 0)
         choice_desc = choice_map.get(choice, "unknown")
         example = (
-            f"Example {i}: {doc.page_content}Their choice was {choice_desc}.\n"
+            f"Example {i}: {doc.page_content} Their choice was {choice_desc}. "
         )
         examples.append(example)
 
     return examples
+
 
 def retrieval(query: str, id: int):
     situations = get_similar_vectors_by_id(id, query)
@@ -237,8 +238,8 @@ def retrieval(query: str, id: int):
 #test
 if __name__ == "__main__":
     pd = pd.read_csv("data/Optima/test.csv")
-    query = pd.iloc[3]["INFOR"]
-    id = pd.iloc[3]["ID"]
+    query = pd.iloc[1]["INFOR"]
+    id = pd.iloc[1]["ID"]
     situations, examples = retrieval(query, id)
     print(query)
     print(id)

@@ -18,7 +18,7 @@ prompt_template = ChatPromptTemplate.from_template(template)
 
 def prompt(row):
     # p1: Task description
-    p1 = "You are a transportation behavior expert that predicts trip mode. Based on the provided trip details, their previous trip choices and similar past trips, what is the most likely trip mode? Only output one of: [Drive, Walk, Transit, Bike/Micromobility]. Do not provide any explanation or additional text, just output the mode name."
+    p1 = "You are a transportation behavior expert that predicts trip mode. Based on the person's attributes, the provided trip details, their previous trip choices and similar past trips, what is the most likely trip mode? Only output one of: [Drive, Walk, Transit, Bike/Micromobility]. Do not provide any explanation or additional text, just output the mode name."
     # p2: Input information
     p2 = "Trip details: \n" + row["INFOR"]
     
@@ -26,9 +26,15 @@ def prompt(row):
     situations, examples = retrieval(row["INFOR"], row["ID"])
     
     formatted_results = "The person's previous choices:\n"
-    formatted_results += "".join(situations)
+    if situations:
+        formatted_results += "".join(situations)
+    else:
+        formatted_results += "No previous choices information. "
     formatted_results += "Read similar trips from others to get a general understanding. The similar trips:\n"
-    formatted_results += "".join(examples)
+    if examples:
+        formatted_results += "".join(examples)
+    else:
+        formatted_results += "No similar trips information."
     
     p3 = formatted_results
     

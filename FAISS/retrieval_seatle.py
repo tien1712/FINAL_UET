@@ -244,8 +244,8 @@ def retrieval(query: str, id: int):
 #test
 if __name__ == "__main__":
     pd = pd.read_csv("data/PSRC_Seatle/test.csv")
-    query = pd.iloc[1]["INFOR"]
-    id = pd.iloc[1]["ID"]
+    query = pd.iloc[3]["INFOR"]
+    id = pd.iloc[3]["ID"]
     situations, examples = retrieval(query, id)
     print(query)
     print(id)

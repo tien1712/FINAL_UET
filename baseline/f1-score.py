@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Đọc dữ liệu
-df = pd.read_csv("results/result5.csv")
+df = pd.read_csv("results/result7.csv")
 
 # Kiểm tra xem có đủ cột không
 if not {"prediction", "CHOICE"}.issubset(df.columns):
@@ -12,7 +12,6 @@ if not {"prediction", "CHOICE"}.issubset(df.columns):
 print("Số lượng giá trị NaN trong cột prediction:", df["prediction"].isna().sum())
 print("Số lượng giá trị NaN trong cột CHOICE:", df["CHOICE"].isna().sum())
 print(df[df["prediction"].isna()])
-
 
 # Lấy nhãn dự đoán và nhãn thực
 y_pred = df["prediction"]

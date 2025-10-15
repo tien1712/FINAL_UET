@@ -29,7 +29,7 @@ df = pd.read_csv("data/PSRC_Seatle/test.csv")
 df["id"] = df.index  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result4.csv"
+result_path = "results/result11.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)

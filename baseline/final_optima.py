@@ -6,21 +6,21 @@ import pandas as pd
 from dotenv import load_dotenv
 from tqdm import tqdm
 from langchain_google_genai import ChatGoogleGenerativeAI
-from prompt import prompt
+from prompt_optima import prompt
 import csv
 # code xử lý tiếp các bản ghi có prediction rỗng
 load_dotenv()
 
 # Lấy tối đa 11 API keys từ biến môi trường GOOGLE_API_KEY_1..11 (lọc None/rỗng)
-raw_api_keys = [os.getenv(f"GOOGLE_API_KEY_{i}") for i in range(1, 12)]
+raw_api_keys = [os.getenv(f"GOOGLE_API_KEY_{i}") for i in range(11, 12)]
 api_keys = [k for k in raw_api_keys if k and str(k).strip()]
 if not api_keys:
     raise RuntimeError("Không tìm thấy API key nào trong biến môi trường GOOGLE_API_KEY_1..11")
 
 label_map = {
-    "Public transports": 0,
-    "Private modes": 1,
-    "Soft modes": 2
+    "public transports": 0,
+    "private modes": 1,
+    "soft modes": 2
 }
 
 # Đọc dữ liệu gốc
@@ -28,12 +28,12 @@ df = pd.read_csv("data/Optima/test.csv")
 df["id"] = df.index  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result5.csv"
+result_path = "results/result13.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)
     if 'id' not in result_df.columns or 'prediction' not in result_df.columns:
-        raise ValueError("result5.csv không đúng định dạng")
+        raise ValueError("result13.csv không đúng định dạng")
     # Tìm các bản ghi có prediction rỗng
     empty_predictions = result_df[result_df['prediction'].isna() | (result_df['prediction'] == '')]
     print(f"Tìm thấy {len(empty_predictions)} bản ghi có prediction rỗng")
@@ -217,7 +217,7 @@ async def call_model_async(index, total, row, api_key, retries=3, delay=10):
                     f.write(f"JSON parse failed at index {index} (id={row.get('id','N/A')}): {pe}\nRAW:\n{raw}\n\n")
                 return row.get("id", index), None, row.get("CHOICE", None)
 
-            prediction_str = (prediction_dict.get("prediction") or "").strip()
+            prediction_str = (prediction_dict.get("prediction") or "").strip().lower()
             print(f"[{index+1}] ✅ Hoàn tất row id={row['id']} → {prediction_str}")
             return row["id"], label_map.get(prediction_str, None), row.get("CHOICE", None)
         except Exception as e:

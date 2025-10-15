@@ -38,5 +38,5 @@ def compute_multiclass_auc(file_path, true_col="CHOICE", pred_col="prediction"):
     return auc_ovo
 
 # In result
-result = compute_multiclass_auc("results/result4.csv")
+result = compute_multiclass_auc("results/result6.csv")
 print("AUC_OVO (M-metric):", result)

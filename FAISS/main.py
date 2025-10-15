@@ -10,7 +10,7 @@ load_dotenv()
 
 # --- Config ---
 CSV_PATH = "data/Optima/train.csv"       # file của bạn
-FAISS_FOLDER = "db/faiss_index"
+FAISS_FOLDER = "db/faiss_index_cleanoptima(70:30)"
 
 # --- API Keys Management ---
 API_KEYS = [
