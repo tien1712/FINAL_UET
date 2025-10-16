@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Đọc dữ liệu
-df = pd.read_csv("results/result7.csv")
+df = pd.read_csv("results/result12.csv")
 
 # Kiểm tra xem có đủ cột không
 if not {"prediction", "CHOICE"}.issubset(df.columns):

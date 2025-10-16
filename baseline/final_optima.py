@@ -12,7 +12,7 @@ import csv
 load_dotenv()
 
 # Lấy tối đa 11 API keys từ biến môi trường GOOGLE_API_KEY_1..11 (lọc None/rỗng)
-raw_api_keys = [os.getenv(f"GOOGLE_API_KEY_{i}") for i in range(11, 12)]
+raw_api_keys = [os.getenv(f"GOOGLE_API_KEY_{i}") for i in range(6, 12)]
 api_keys = [k for k in raw_api_keys if k and str(k).strip()]
 if not api_keys:
     raise RuntimeError("Không tìm thấy API key nào trong biến môi trường GOOGLE_API_KEY_1..11")
@@ -28,7 +28,7 @@ df = pd.read_csv("data/Optima/test.csv")
 df["id"] = df.index  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result13.csv"
+result_path = "results/result14.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)
