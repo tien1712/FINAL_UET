@@ -1,0 +1,1 @@
+Based on the above examples, previous choices and Step 1's results, infer 10 different conditions per answer, following the format below. The condition should make sense, well match examples and previous choices.

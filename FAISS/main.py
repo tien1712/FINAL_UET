@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Config ---
-CSV_PATH = "data/Optima/train.csv"       # file của bạn
-FAISS_FOLDER = "db/faiss_index_cleanoptima(70:30)"
+CSV_PATH = "data/Optima/train1.csv"       # file của bạn
+FAISS_FOLDER = "db/faiss_index_papercleanoptima(70:30)"
 
 # --- API Keys Management ---
 API_KEYS = [

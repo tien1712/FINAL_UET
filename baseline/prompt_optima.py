@@ -18,7 +18,7 @@ prompt_template = ChatPromptTemplate.from_template(template)
 
 def prompt(row):
     # p1: Task description
-    p1 = "You are a transportation behavior expert that predicts trip mode (either 'Public transports (train, bus, tram, etc.)', 'Private modes (car, motorbike, etc.)', 'Soft modes (bike, walk, etc.)'). Based on the provided trip details, their previous trip choices and similar past trips, what is the most likely trip mode? Only output one of: [Public transports, Private modes, Soft modes]. Describe your reasoning in steps and just output the mode name."
+    p1 = "You are a transportation behavior expert that predicts trip mode (either 'Public transports (train, bus, tram, etc.)', 'Private modes (car, motorbike, etc.)', 'Soft modes (bike, walk, etc.)'). Based on the provided trip details, their previous trip choices and similar past trips, what is the most likely trip mode? Only output one of: [Public transports, Private modes, Soft modes]. Note the '...' places are where information is missing. "
     #Note the '...' places are where information is missing.   
     
     # p2: Input information
@@ -32,7 +32,7 @@ def prompt(row):
         formatted_results += "".join(situations)
     else:
         formatted_results += "No previous choices information. "
-    formatted_results += "Read similar trips from others to get a general understanding. The similar trips: "
+    formatted_results += "The similar trips from others: "
     if examples:
         formatted_results += "".join(examples)
     else:

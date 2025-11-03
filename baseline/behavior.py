@@ -6,7 +6,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from tqdm import tqdm
 from langchain_google_genai import ChatGoogleGenerativeAI
-from prompt_optima_ver3 import prompt
+from prompt_behavior import prompt
 import csv
 # code xử lý tiếp các bản ghi có prediction rỗng
 load_dotenv()
@@ -17,57 +17,66 @@ api_keys = [k for k in raw_api_keys if k and str(k).strip()]
 if not api_keys:
     raise RuntimeError("Không tìm thấy API key nào trong biến môi trường GOOGLE_API_KEY_1..11")
 
-label_map = {
-    "public transports": 0,
-    "private modes": 1,
-    "soft modes": 2
-}
-
 # Đọc dữ liệu gốc
-df = pd.read_csv("data/Optima/test.csv")
-df["id"] = df.index  # lưu lại chỉ số dòng gốc
+df = pd.read_csv("data/Optima/paperdata/behavior_clean.csv")  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result21.csv"
+result_path = "results/behavior.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)
-    if 'id' not in result_df.columns or 'prediction' not in result_df.columns:
-        raise ValueError("result20.csv không đúng định dạng")
-    # Tìm các bản ghi có prediction rỗng
-    empty_predictions = result_df[result_df['prediction'].isna() | (result_df['prediction'] == '')]
-    print(f"Tìm thấy {len(empty_predictions)} bản ghi có prediction rỗng")
-    if len(empty_predictions) == 0:
+    if 'ID' not in result_df.columns or 'response' not in result_df.columns:
+        raise ValueError("behavior.csv không đúng định dạng")
+    # Tìm các bản ghi có response rỗng
+    empty_responses = result_df[result_df['response'].isna() | (result_df['response'] == '')]
+    print(f"Tìm thấy {len(empty_responses)} bản ghi có response rỗng")
+    if len(empty_responses) == 0:
         # Nếu không còn rỗng, không cần xử lý thêm
         print("Không có bản ghi nào cần xử lý lại!")
         # Không exit để có thể hỗ trợ chạy toàn tập nếu người dùng xóa file rồi chạy lại
         rows_to_process = []
     else:
-        empty_ids = empty_predictions['id'].tolist()
-        rows_to_process = df[df['id'].isin(empty_ids)].to_dict(orient="records")
+        empty_ids = empty_responses['ID'].tolist()
+        rows_to_process = df[df['ID'].isin(empty_ids)].to_dict(orient="records")
         print(f"Sẽ xử lý lại {len(rows_to_process)} bản ghi")
 except Exception:
     # File chưa tồn tại hoặc không hợp lệ → khởi tạo mới và xử lý toàn bộ test
     os.makedirs(os.path.dirname(result_path), exist_ok=True)
     base = {
-        'id': df['id'],
-        'prediction': [''] * len(df)
+        'ID': df['ID'],
+        'response': [''] * len(df)
     }
-    if 'CHOICE' in df.columns:
-        base['CHOICE'] = df['CHOICE']
-    else:
-        base['CHOICE'] = [None] * len(df)
     result_df = pd.DataFrame(base)
     result_df.to_csv(result_path, index=False)
     rows_to_process = df.to_dict(orient="records")
     process_all = True
-    print(f"Khởi tạo {result_path}. Sẽ xử lý toàn bộ {len(rows_to_process)} bản ghi trong test.csv")
+    print(f"Khởi tạo {result_path}. Sẽ xử lý toàn bộ {len(rows_to_process)} bản ghi trong behavior.csv")
+
+def extract_behavior_response(raw: str):
+    """Extract phần response sau cụm từ 'transportation behavior:'"""
+    if raw is None or not str(raw).strip():
+        return raw
+    
+    text = str(raw).strip()
+    # Tìm cụm từ "transportation behavior:" (case-insensitive)
+    pattern = r"transportation behavior\s*:"
+    match = re.search(pattern, text, re.IGNORECASE)
+    
+    if match:
+        # Lấy phần sau cụm từ này
+        start_pos = match.end()
+        extracted = text[start_pos:].strip()
+        # Loại bỏ khoảng trắng và dòng trống đầu tiên
+        extracted = extracted.lstrip('\n').strip()
+        return extracted if extracted else raw
+    
+    # Nếu không tìm thấy, trả về toàn bộ response
+    return raw
 
 def safe_parse_json(raw: str):
     if raw is None or not str(raw).strip():
         raise ValueError("Empty model response")
     text = str(raw).strip()
-    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.IGNORECASE | re.MULTILINE)
     try:
         return json.loads(text)
     except Exception:
@@ -95,20 +104,6 @@ def safe_parse_json(raw: str):
                 return data
         except Exception:
             pass
-        # Heuristic cuối: cố gắng trích xuất nhãn dự đoán từ text tự do
-        try:
-            # Tìm pattern prediction: <label> hoặc chỉ có label đứng riêng lẻ
-            m = re.search(r"prediction\s*[:=\-\s]+(Public transports|Private modes|Soft modes)", text, flags=re.IGNORECASE)
-            if not m:
-                # Tìm label đứng riêng lẻ (có thể là toàn bộ response)
-                m = re.search(r"\b(Public transports|Private modes|Soft modes)\b", text, flags=re.IGNORECASE)
-            if m:
-                label = m.group(1).strip()
-                return {"prediction": label}
-        except Exception:
-            pass
-        # Nếu tất cả đều thất bại, ném lỗi gốc để hiển thị thông tin
-        raise
 
 class PerKeyRateLimiter:
     def __init__(self, key: str, per_minute_limit: int = 2, per_day_limit: int = 50):
@@ -205,30 +200,32 @@ async def call_model_async(index, total, row, api_key, retries=2, delay=30):
     for attempt in range(retries):
         try:
             prompt_text = prompt(row)
-            print(f"[{index+1}/{total}] 🔍 Đang xử lý lại row id={row['id']}...")
+            print(f"[{index+1}/{total}] 🔍 Đang xử lý lại row id={row['ID']}...")
             response = await asyncio.to_thread(_do_invoke, prompt_text)
             raw = str(getattr(response, "content", response))
 
-            try:
-                prediction_dict = safe_parse_json(raw)
-            except Exception as pe:
-                print(f"[{index+1}] ❌ JSON parse failed for id={row.get('id','N/A')}: {pe}")
-                with open("errors.log", "a") as f:
-                    f.write(f"JSON parse failed at index {index} (id={row.get('id','N/A')}): {pe}\nRAW:\n{raw}\n\n")
-                return row.get("id", index), None, row.get("CHOICE", None)
+            # Lưu toàn bộ response vào file theo ID
+            response_dir = "results/responses"
+            os.makedirs(response_dir, exist_ok=True)
+            response_file = os.path.join(response_dir, f"{row['ID']}.txt")
+            with open(response_file, "w", encoding="utf-8") as f:
+                f.write(raw)
+            print(f"[{index+1}] 💾 Đã lưu response vào {response_file}")
 
-            prediction_str = (prediction_dict.get("prediction") or "").strip().lower()
-            print(f"[{index+1}] ✅ Hoàn tất row id={row['id']} → {prediction_str}")
-            return row["id"], label_map.get(prediction_str, None), row.get("CHOICE", None)
+            # Extract phần response sau "transportation behavior:"
+            extracted_response = extract_behavior_response(raw)
+
+            print(f"[{index+1}] ✅ Hoàn tất row id={row['ID']}")
+            return row["ID"], extracted_response
         except Exception as e:
             if ("429" in str(e) or "rate" in str(e).lower()) and attempt < retries - 1:
                 print(f"[{index+1}] ⏳ Lỗi 429/rate limit. Đợi {delay}s rồi thử lại...")
                 await asyncio.sleep(delay)
             else:
-                print(f"[{index+1}] ❌ Lỗi ở row id={row.get('id', 'N/A')}: {e}")
+                print(f"[{index+1}] ❌ Lỗi ở row id={row.get('ID', 'N/A')}: {e}")
                 with open("errors.log", "a") as f:
-                    f.write(f"Lỗi ở dòng {index} (id={row.get('id', 'N/A')}): {e}\n")
-                return row.get("id", index), None, row.get("CHOICE", None)
+                    f.write(f"Lỗi ở dòng {index} (id={row.get('ID', 'N/A')}): {e}\n")
+                return row.get("ID", index), None
 
 async def process_with_single_key(index, total, row, api_key, retries=5, delay=30):
     """Xử lý 1 request với 1 key, retry tối đa 5 lần nếu lỗi"""
@@ -253,15 +250,15 @@ async def worker(name, api_keys_list, jobs_q: asyncio.Queue, result_df, result_p
             
             # Xử lý request với 1 key, retry 5 lần nếu lỗi
             result = await process_with_single_key(item[0], total, item[1], api_key, retries=5, delay=30)
+            # result = (id, raw_response)
             # cập nhật kết quả và lưu file an toàn
             async with df_lock:
-                result_df.loc[result_df['id'] == result[0], 'prediction'] = result[1]
-                # Cập nhật CHOICE nếu còn trống và có trong dữ liệu đầu vào
-                if 'CHOICE' in result_df.columns and 'CHOICE' in item[1]:
-                    if pd.isna(result_df.loc[result_df['id'] == result[0], 'CHOICE']).any() or (result_df.loc[result_df['id'] == result[0], 'CHOICE'] == '').any():
-                        result_df.loc[result_df['id'] == result[0], 'CHOICE'] = item[1].get('CHOICE')
-                result_df.to_csv(result_path, index=False)
-                print(f"✅ Đã cập nhật id={result[0]} với prediction={result[1]}")
+                if result[1] is not None:
+                    result_df.loc[result_df['ID'] == result[0], 'response'] = result[1]
+                    result_df.to_csv(result_path, index=False)
+                    print(f"✅ Đã cập nhật id={result[0]} với response")
+                else:
+                    print(f"⚠️ Không có response cho id={result[0]}")
             # cập nhật tiến độ và in phần trăm
             async with progress_lock:
                 progress_state['done'] += 1
@@ -313,7 +310,7 @@ async def run_all(rows, result_df, result_path: str, api_keys_list, max_workers:
     await asyncio.gather(*workers, return_exceptions=True)
 
 # Cập nhật kết quả
-print("Bắt đầu xử lý lại các bản ghi có prediction rỗng...")
+print("Bắt đầu xử lý lại các bản ghi có response rỗng...")
 
 # Chạy tuần tự với 1 worker để dùng lần lượt các key
 asyncio.run(run_all(rows_to_process, result_df, result_path, api_keys, max_workers=1))
@@ -321,8 +318,8 @@ asyncio.run(run_all(rows_to_process, result_df, result_path, api_keys, max_worke
 print(f"✅ Hoàn tất xử lý lại. Kết quả cập nhật tại: {result_path}")
 
 # Kiểm tra lại xem còn bản ghi nào rỗng không
-final_check = result_df[result_df['prediction'].isna() | (result_df['prediction'] == '')]
+final_check = result_df[result_df['response'].isna() | (result_df['response'] == '')]
 if len(final_check) > 0:
-    print(f"⚠️ Vẫn còn {len(final_check)} bản ghi có prediction rỗng: {final_check['id'].tolist()}")
+    print(f"⚠️ Vẫn còn {len(final_check)} bản ghi có response rỗng: {final_check['ID'].tolist()}")
 else:
     print("🎉 Tất cả bản ghi đã được xử lý thành công!")
