@@ -12,7 +12,7 @@ import csv
 load_dotenv()
 
 # Lấy tối đa 11 API keys từ biến môi trường GOOGLE_API_KEY_1..11 (lọc None/rỗng)
-raw_api_keys = [os.getenv(f"GOOGLE_API_KEY_{i}") for i in range(1, 25)]
+raw_api_keys = [os.getenv(f"GOOGLE_API_KEY_{i}") for i in range(2, 4)]
 api_keys = [k for k in raw_api_keys if k and str(k).strip()]
 if not api_keys:
     raise RuntimeError("Không tìm thấy API key nào trong biến môi trường GOOGLE_API_KEY_1..11")
@@ -24,16 +24,16 @@ label_map = {
 }
 
 # Đọc dữ liệu gốc
-df = pd.read_csv("data/Optima/test.csv")
+df = pd.read_csv("data/Optima/test1.csv")
 df["id"] = df.index  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result21.csv"
+result_path = "results/result30.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)
     if 'id' not in result_df.columns or 'prediction' not in result_df.columns:
-        raise ValueError("result20.csv không đúng định dạng")
+        raise ValueError("result22.csv không đúng định dạng")
     # Tìm các bản ghi có prediction rỗng
     empty_predictions = result_df[result_df['prediction'].isna() | (result_df['prediction'] == '')]
     print(f"Tìm thấy {len(empty_predictions)} bản ghi có prediction rỗng")
