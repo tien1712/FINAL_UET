@@ -6,7 +6,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from tqdm import tqdm
 from langchain_google_genai import ChatGoogleGenerativeAI
-from prompt_behavior_ver2 import prompt
+from prompt_behavior_ver3 import prompt
 import csv
 # code xử lý tiếp các bản ghi có prediction rỗng
 load_dotenv()
@@ -21,7 +21,7 @@ if not api_keys:
 df = pd.read_csv("data/Optima/paperdata/behavior_clean_test.csv")  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/behavior_ver3.csv"
+result_path = "results/behavior_ver3_paperdata.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)

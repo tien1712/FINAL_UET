@@ -24,11 +24,11 @@ label_map = {
 }
 
 # Đọc dữ liệu gốc
-df = pd.read_csv("data/Optima/test1.csv")
+df = pd.read_csv("data/Optima/test.csv")
 df["id"] = df.index  # lưu lại chỉ số dòng gốc
 
 # Đọc/khởi tạo kết quả hiện tại
-result_path = "results/result30.csv"
+result_path = "results/result35.csv"
 process_all = False
 try:
     result_df = pd.read_csv(result_path)

@@ -16,7 +16,7 @@ prompt_template = ChatPromptTemplate.from_template(template)
 
 def prompt(row):
     # p1: Task description
-    p1 = "You are a transportation behavior expert that thinking about the person's transportation behavior. Based on behavioral survey questions. The task is to infer 3 conditions that describe the person's transportation behavior when choosing 'Public transports (train, bus, tram, etc.)', 'Private modes (car, motorbike, etc.)', 'Soft modes (bike, walk, etc.)'). The output is a paragraph containing information about three conditions in the format: 'That person uses Public transports if: [condition], Use Private modes if: [condition], Use Soft modes if: [condition]'. The paragraph must be clear and in the correct format. "
+    p1 = "You are a transportation behavior expert that thinking about the person's transportation behavior. Based on attitude questions about mobility. The task is to infer 3 conditions that describe the person's transportation behavior when choosing 'Public transports (train, bus, tram, etc.)', 'Private modes (car, motorbike, etc.)', 'Soft modes (bike, walk, etc.)'). The output is a paragraph containing information about three conditions in the format: 'That person uses Public transports if: [condition], Use Private modes if: [condition], Use Soft modes if: [condition].'. The paragraph must be clear and in the correct format. "
     #p1 += "There are 5 levels of responses: 1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree, 6 = not applicable. (note: -1 = missing value)"
     
      #p2: question description

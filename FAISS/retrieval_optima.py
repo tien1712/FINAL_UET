@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Cấu hình ---
-faiss_folder = "db/faiss_index_papercleanoptima(70:30)"  # FAISS database từ main.py
+faiss_folder = "db/faiss_index_paperoptima(70:30)"  # FAISS database từ main.py
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
 # --- Multiple API Keys & Key Rotation (1000 embeds/day per key) ---
@@ -193,7 +193,7 @@ def get_similar_vectors_by_id(query_id: int, query: str, examples_id: int = 2) -
         final_situations.append(example)
     return final_situations
 
-def balanced_retrieval_with_rerank(query: str, query_id: int, k_per_label: int = 5, top_k: int = 3):
+def balanced_retrieval_with_rerank(query: str, query_id: int, k_per_label: int = 5, top_k: int = 5):
     """
     Balanced Retrieval theo label + Cross-Encoder re-ranking.
     Trả về: 1 chuỗi text gồm các ví dụ.

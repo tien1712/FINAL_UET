@@ -20,7 +20,7 @@ prompt_template = ChatPromptTemplate.from_template(template)
 
 def behavior(row):
     id = row["ID"]
-    behavior_path = "results/behavior_ver3_paperdata.csv"
+    behavior_path = "results/behavior_ver3.csv"
     behavior_df = pd.read_csv(behavior_path)
     behavior_row = behavior_df[behavior_df["ID"] == id]
     if behavior_row.empty:
@@ -42,18 +42,21 @@ def prompt(row):
     
     #p2: Features description
     p2 = "Features:"
-    p2 += "- TimePT: Total duration of the travel performed in public transport (in minutes)"
-    p2 += "- TimeCar: Total duration of the travel performed using the car (in minutes)"
-    p2 += "- MarginalCostPT: Total cost in public transport taking into account the possible discounts"
-    p2 += "- CostCarCHF: Total cost of a travel performed using the car (in Swiss francs)"
-    p2 += "- distance km: Total distance (in kilometers)"
-    p2 += "- age: Age of the individual"
-    p2 += "- NbChild: Number of kids in the household"
-    p2 += "- NbCar: Number of cars the household"
-    p2 += "- NbMoto: Number of motorbikes in the household" 
-    p2 += "- NbBicy: Number of bikes in the household"
-    p2 += "- Gender: Gender of the individual"
-    p2 += "- OccupStat: Occupational status of the individual"
+    p2 += "- TimePT: Total duration of the travel performed in public transport (in minutes)\n"
+    p2 += "- TimeCar: Total duration of the travel performed using the car (in minutes)\n"
+    p2 += "- MarginalCostPT: Total cost in public transport taking into account the possible discounts\n"
+    p2 += "- CostCarCHF: Total cost of a travel performed using the car (in Swiss francs)\n"
+    p2 += "- NbTransf: The total number of transfers performed for all trips of the loop, using public transport\n"
+    p2 += "- Distance km: Total distance (in kilometers)\n"
+    p2 += "- Trip purpose: Purpose of the trip\n"
+    p2 += "- Age: Age of the individual\n"
+    p2 += "- Gender: Gender of the individual\n"
+    p2 += "- StudyLevel: Study level of the individual\n"
+    p2 += "- Income: Monthly income of the household (in Swiss francs)\n"
+    p2 += "- NbCar: Number of cars in the household\n"
+    p2 += "- NbMoto: Number of motorbikes in the household\n" 
+    p2 += "- NbBicy: Number of bicycles in the household\n"
+    p2 += "- CarAvail: Availability of a car in the household for going out"
     
     # p3: Input information
     p3 = "Trip details: " + row["INFOR"]
